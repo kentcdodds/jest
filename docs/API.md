@@ -64,7 +64,7 @@ expect all the time. That's what you use `expect` for.
   - [`.toHaveLength(number)`](#tohavelengthnumber)
   - [`.toMatch(regexp)`](#tomatchregexp)
   - [`.toMatchObject(object)`](#tomatchobjectobject)
-  - [`.toMatchSnapshot()`](#tomatchsnapshot)
+  - [`.toMatchSnapshot()`](#tomatchsnapshotstring)
   - [`.toThrow()`](#tothrow)
   - [`.toThrowError(error)`](#tothrowerrorerror)
   - [`.toThrowErrorMatchingSnapshot()`](#tothrowerrormatchingsnapshot)
@@ -641,7 +641,9 @@ describe('looking for a new house', () => {
 
 ### `.toMatchSnapshot(?string)`
 
-This ensures that a value matches the most recent snapshot. Check out [the React + Jest tutorial](https://facebook.github.io/jest/docs/tutorial-react.html) for more information on snapshot testing.
+This ensures that a value matches the most recent snapshot. Check out [the React + Jest tutorial](https://facebook.github.io/jest/docs/tutorial-react.html) and
+[this egghead video](https://egghead.io/lessons/javascript-use-jest-s-snapshot-testing-feature?pl=testing-javascript-with-jest-a36c4074)
+for more information on snapshot testing.
 
 You can also specify an optional snapshot name. Otherwise, the name is inferred
 from the test.
